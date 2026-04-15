@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gewerbeverein Mitgliederverzeichnis</title>
+    <title>Gewerbeverein | Startseite</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Mitgliederverzeichnis des Gewerbevereins</h1>
+        <div class="logo">Gewerbeverein Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#members">Mitglieder</a></li>
+                <li><a href="#events">Veranstaltungen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h2>Unsere Mitglieder:</h2>
-        <ul id="members-list"></ul>
+        <section id="about">
+            <h1>Willkommen beim Gewerbeverein</h1>
+            <p>Hier ist eine kurze Beschreibung des Vereins und seiner Aktivitäten.</p>
+        </section>
+        <section id="members">
+            <h2>Mitgliederverzeichnis</h2>
+            <ul id="members-list"></ul>
+        </section>
+        <section id="events">
+            <h2>Veranstaltungen</h2>
+            <p>Liste der aktuellen und kommenden Veranstaltungen.</p>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Absenden">
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2026 Gewerbeverein. Alle Rechte vorbehalten.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
